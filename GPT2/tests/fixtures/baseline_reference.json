@@ -1,0 +1,22 @@
+{
+  "commit": "7b159669f6225231ee75f5ea110c1be69f4ce8ef",
+  "seed_model": 1234,
+  "seed_input": 4321,
+  "param_count": 9472,
+  "config": {
+    "layers": 2,
+    "pad_idx": 0,
+    "words": 80,
+    "seq_len": 100,
+    "heads": 2,
+    "dims": 16,
+    "rate": 4,
+    "bidirectional": false
+  },
+  "logits_sha256": "673441ee9b1f86fdf8047dceef7414301dcb7cb049a017dc39781c60e5882467",
+  "logits_shape": [
+    1,
+    8,
+    80
+  ]
+}

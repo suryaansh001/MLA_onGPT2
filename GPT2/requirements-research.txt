@@ -1,0 +1,8 @@
+# Research environment pins (Phase 0, recorded 2026-11-12).
+# Python 3.12.3. CPU PyTorch build; CUDA builds of the same version are
+# compatible with this file (device is chosen by configuration, not import).
+torch==2.15.0
+numpy==2.5.4
+regex==2026.11.9
+tqdm
+pytest

@@ -1,0 +1,47 @@
+{
+  "model": {
+    "layers": 2,
+    "dims": 64,
+    "heads": 4,
+    "seq_len": 64,
+    "rate": 2,
+    "dropout": 0.1,
+    "attention": "mla",
+    "positional_embedding": false,
+    "kv_latent_dims": 64,
+    "query_latent_dims": 64,
+    "rope_head_dims": 16,
+    "use_query_latent": true,
+    "use_latent_norm": true
+  },
+  "data": {
+    "vocab_path": "data/vocab.txt",
+    "cache_dir": null,
+    "record_limit": 200,
+    "token_limit": 20000,
+    "val_fraction": 0.05,
+    "data_seed": 1234,
+    "shard_size": 500,
+    "batch_size": 4,
+    "grad_accumulation": 1
+  },
+  "optimiser": {
+    "peak_lr": 0.00025,
+    "weight_decay": 0.1,
+    "betas": [
+      0.9,
+      0.95
+    ],
+    "clip_norm": 1.0,
+    "warmup_fraction": 0.05,
+    "final_fraction": 0.1
+  },
+  "steps": 50,
+  "seed": 42,
+  "device": "auto",
+  "precision": "auto",
+  "log_interval": 10,
+  "eval_interval": 25,
+  "save_steps": 25,
+  "run_name": "ablation_mla_no_pos"
+}
